@@ -1,27 +1,32 @@
-import { Route, Routes } from 'react-router-dom';
-import SharedLayout from 'components/SharedLayout/SharedLayout';
-import FirstPage from 'pages/FirstPage/FirstPage';
-import SecondPage from 'pages/SecondPage/SecondPage';
-import HalfPage from 'pages/HalfPage/HalfPage';
-import ErrorPage from 'pages/ErrorPage/ErrorPage';
-import { AppWrapper } from './App.styled';
+import { Route, Routes, Navigate } from 'react-router-dom';
+import { lazy } from 'react';
 
-const test = import.meta.env.VITE_API_TEST;
+import SharedLayout from './components/SharedLayout';
+// import FirstPage from 'pages/FirstPage/FirstPage';
+// import HomePage from './pages/HomePage';
+// import SecondPage from 'pages/SecondPage/SecondPage';
+// import CatalogPage from './pages/CatalogPage';
+// import FavoritePage from './pages/FavoritePage';
+// import { AppWrapper } from './App.styled';
+
+const Home = lazy(() => import('pages/HomePage'));
+const Catalog = lazy(() => import('pages/CatalogPage'));
+const Favorite = lazy(() => import('pages/FavoritePage'));
 
 function App() {
-  console.log(test);
   return (
-    <AppWrapper>
+    // <AppWrapper>
+    <>
       <Routes>
         <Route path="/" element={<SharedLayout />}>
-          <Route path="/first" element={<FirstPage />} />
-          <Route path="/second" element={<SecondPage />}>
-            <Route path=":half" element={<HalfPage />} />
-          </Route>
-          <Route path="*" element={<ErrorPage />} />
+          <Route index element={<Home />} />
+          <Route path="catalog" element={<Catalog />}></Route>
+          <Route path="favorite" element={<Favorite />}></Route>
+          <Route path="*" element={<Navigate to="/" />} />
         </Route>
       </Routes>
-    </AppWrapper>
+    </>
+    // </AppWrapper>
   );
 }
 export default App;
