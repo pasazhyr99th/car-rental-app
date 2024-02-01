@@ -2,6 +2,7 @@ import { Route, Routes, Navigate } from 'react-router-dom';
 import { lazy } from 'react';
 
 import SharedLayout from './components/SharedLayout';
+import { ContainerApp } from './App.styled';
 // import FirstPage from 'pages/FirstPage/FirstPage';
 // import HomePage from './pages/HomePage';
 // import SecondPage from 'pages/SecondPage/SecondPage';
@@ -15,8 +16,7 @@ const Favorite = lazy(() => import('pages/FavoritePage'));
 
 function App() {
   return (
-    // <AppWrapper>
-    <>
+    <ContainerApp>
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />} />
@@ -25,8 +25,7 @@ function App() {
           <Route path="*" element={<Navigate to="/" />} />
         </Route>
       </Routes>
-    </>
-    // </AppWrapper>
+    </ContainerApp>
   );
 }
 export default App;

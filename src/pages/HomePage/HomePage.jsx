@@ -1,11 +1,11 @@
-import { Container, Title, StyledImage } from './HomePage.styled';
-import example from '../../assets/example.png';
+// import { Container, Title, StyledImage } from './HomePage.styled';
+import { Container, Title } from './HomePage.styled';
+// import example from '../../assets/example.png';
 
 const HomePage = () => {
   return (
     <Container>
-      <Title>First Page</Title>
-      <StyledImage src={example} alt="Example" />
+      <Title>Home Page</Title>
     </Container>
   );
 };

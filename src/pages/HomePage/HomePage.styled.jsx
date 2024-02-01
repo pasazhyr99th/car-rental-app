@@ -12,11 +12,11 @@ export const Title = styled.h1`
   margin-right: 10px;
   color: #ffffff;
   text-shadow:
-    0 0 5px #00baff,
-    0 0 10px #00baff,
-    0 0 20px #00baff,
-    0 0 40px #00baff,
-    0 0 80px #00baff;
+    0 0 5px #f23224,
+    0 0 10px #f23224,
+    0 0 20px #f23224,
+    0 0 40px #f23224,
+    0 0 80px #f23224;
 `;
 export const StyledImage = styled.img`
   width: 40px;
