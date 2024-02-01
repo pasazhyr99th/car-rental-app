@@ -3,12 +3,6 @@ import { lazy } from 'react';
 
 import SharedLayout from './components/SharedLayout';
 import { ContainerApp } from './App.styled';
-// import FirstPage from 'pages/FirstPage/FirstPage';
-// import HomePage from './pages/HomePage';
-// import SecondPage from 'pages/SecondPage/SecondPage';
-// import CatalogPage from './pages/CatalogPage';
-// import FavoritePage from './pages/FavoritePage';
-// import { AppWrapper } from './App.styled';
 
 const Home = lazy(() => import('pages/HomePage'));
 const Catalog = lazy(() => import('pages/CatalogPage'));
