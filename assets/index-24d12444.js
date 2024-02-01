@@ -1,8 +1,8 @@
-import{s as a,j as t}from"./index-36aab1e8.js";const e=a.div`
+import{s as a,j as t}from"./index-ef74210e.js";const e=a.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 500px;
+  padding-top: 100px;
 `,n=a.h1`
   margin: 0;
   margin-right: 10px;
