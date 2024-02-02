@@ -1,9 +1,9 @@
-import{s as a,j as t}from"./index-ef74210e.js";const e=a.div`
+import{n as e,j as t}from"./index-adfe3945.js";const n=e.div`
   display: flex;
   justify-content: center;
   align-items: center;
   padding-top: 100px;
-`,n=a.h1`
+`,i=e.h1`
   margin: 0;
   margin-right: 10px;
   color: #ffffff;
@@ -13,4 +13,8 @@ import{s as a,j as t}from"./index-ef74210e.js";const e=a.div`
     0 0 20px #f23224,
     0 0 40px #f23224,
     0 0 80px #f23224;
-`,o=()=>t.jsx(e,{children:t.jsx(n,{children:"Catalog Page"})}),f=o;export{f as default};
+`;e.img`
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+`;const o=()=>t.jsx(n,{children:t.jsx(i,{children:"Home Page"})}),r=o;export{r as default};
