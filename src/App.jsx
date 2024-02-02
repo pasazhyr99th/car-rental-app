@@ -8,7 +8,7 @@ const Home = lazy(() => import('pages/HomePage'));
 const Catalog = lazy(() => import('pages/CatalogPage'));
 const Favorite = lazy(() => import('pages/FavoritePage'));
 
-function App() {
+const App = () => {
   return (
     <ContainerApp>
       <Routes>
@@ -21,5 +21,5 @@ function App() {
       </Routes>
     </ContainerApp>
   );
-}
+};
 export default App;
