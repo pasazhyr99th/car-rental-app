@@ -1,9 +1,4 @@
-import {
-  HeaderContainer,
-  Navigation,
-  StyledLink,
-  // IconWrapper,
-} from './Header.styled';
+import { HeaderContainer, Navigation, StyledLink } from './Header.styled';
 // import sprite from 'assets/sprite.svg';
 
 const Header = () => {
