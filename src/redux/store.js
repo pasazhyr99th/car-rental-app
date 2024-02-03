@@ -6,13 +6,22 @@ import {
   REGISTER,
   REHYDRATE,
   persistStore,
+  persistReducer,
 } from 'redux-persist';
-import { reducer } from './reducer';
+import storage from 'redux-persist/lib/storage';
+import advertsReducer from './advertsSlice';
 import { configureStore } from '@reduxjs/toolkit';
 
-export const store = configureStore({
-  reducer: reducer,
+const persistConfig = {
+  key: 'root',
+  storage,
+  whitelist: ['adverts'],
+};
 
+const persistedReducer = persistReducer(persistConfig, advertsReducer);
+
+export const store = configureStore({
+  reducer: { adverts: persistedReducer },
   middleware: (getDefaultMiddleware) =>
     getDefaultMiddleware({
       serializableCheck: {

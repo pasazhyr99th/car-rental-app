@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { createAsyncThunk } from '@reduxjs/toolkit';
+import { setAdverts } from './advertsSlice';
 
 axios.defaults.baseURL = 'https://65bd2426b51f9b29e932fc0e.mockapi.io';
 
@@ -14,3 +15,13 @@ export const fetchAdverts = createAsyncThunk(
     }
   }
 );
+
+export const fetchAdvertsAsync = () => async (dispatch, getState) => {
+  const page = getState().adverts.page;
+  try {
+    const response = await dispatch(fetchAdverts(page));
+    dispatch(setAdverts(response.payload));
+  } catch (error) {
+    console.error('Error fetching adverts:', error);
+  }
+};
