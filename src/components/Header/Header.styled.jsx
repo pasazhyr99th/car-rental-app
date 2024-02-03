@@ -17,13 +17,11 @@ export const Navigation = styled.nav`
 
 export const StyledLink = styled(Link)`
   padding: 12px 30px;
+
   font-size: 20px;
   line-height: 1.11;
 
   border: 1px solid transparent;
-  border-radius: 30px;
-
-  border-color: transparent;
   border-radius: 30px;
   transition:
     background-color 300ms ease-in-out,
