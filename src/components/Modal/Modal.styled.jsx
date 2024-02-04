@@ -8,7 +8,7 @@ export const Overlay = styled.div`
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  display: ${(props) => (props.isOpen ? 'block' : 'none')};
+  display: ${(props) => (props['data-isopen'] ? 'block' : 'none')};
   z-index: 1000;
 `;
 
@@ -20,11 +20,11 @@ export const ContainerModal = styled.div`
 
   border-radius: 24px;
   width: 541px;
-  height: 752px;
 
   background-color: ${styleGuide.whiteColor};
-  padding: 40px;
-  display: ${(props) => (props.isOpen ? 'block' : 'none')};
+  padding: 35px;
+
+  display: ${(props) => (props['data-isopen'] ? 'block' : 'none')};
   z-index: 1001;
 `;
 
@@ -57,7 +57,7 @@ export const BtnIconClose = styled.svg`
 
 export const Image = styled.img`
   width: 100%;
-  height: 314px;
+  height: 248px;
   display: block;
   object-fit: cover;
   border-radius: 14px;
@@ -88,12 +88,9 @@ export const DescriptionText = styled.p`
 
 export const DescriptionList = styled.ul`
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  row-gap: 6px;
 
-  width: 100%;
-  height: 16px;
+  width: 461px;
 
   overflow: hidden;
 `;
@@ -114,17 +111,49 @@ export const DescriptionItem = styled.li`
 `;
 
 export const Label = styled.p`
+  margin-top: 24px;
+  margin-bottom: 8px;
+
   font-weight: 500;
   font-size: 14px;
-  line-height: 1.43%;
+  line-height: 1.43;
   color: #121417;
 `;
 
-export const BtnRental = styled.a`
-  margin-top: 28px;
-  padding: 12px 50px;
+export const ConditionsList = styled.ul`
+  display: flex;
+  flex-wrap: wrap;
 
-  width: 100%;
+  gap: 8px;
+`;
+
+export const ConditionsItem = styled.li`
+  padding: 6px 12px;
+
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #363535;
+
+  background-color: ${styleGuide.lightGreyBackground};
+
+  border-radius: 35px;
+`;
+
+export const ConditionSpan = styled.span`
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: ${styleGuide.blueMainColor};
+`;
+
+export const BtnRental = styled.button`
+  margin-top: 16px;
+  padding: 12px 50px;
 
   font-weight: 600;
   font-size: 14px;
@@ -133,7 +162,6 @@ export const BtnRental = styled.a`
 
   border: 1px solid ${styleGuide.blueMainColor};
   border-radius: 12px;
-  outline: none;
 
   background-color: ${styleGuide.blueMainColor};
 
