@@ -152,7 +152,7 @@ export const ConditionSpan = styled.span`
 `;
 
 export const BtnRental = styled.button`
-  margin-top: 16px;
+  margin-top: 24px;
   padding: 12px 50px;
 
   font-weight: 600;
