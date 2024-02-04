@@ -10,4 +10,4 @@ export const selectPriceFilter = (state) => state.adverts.priceFilter;
 
 export const selectMileageFilter = (state) => state.adverts.mileageFilter;
 
-export const selectHasMore = (state) => state.adverts.setHasMore;
+export const selectHasMore = (state) => state.adverts.hasMore;

@@ -26,40 +26,23 @@ export const fetchAdvertsAsync =
     const page = getState().adverts.page;
     try {
       const response = await dispatch(fetchAdverts({ page, makeFilter }));
-      dispatch(setAdverts(response.payload));
+      const currentAdverts = getState().adverts.list;
+      const newAdverts = response.payload;
 
-      const hasMore = response.payload.length > 0;
-      dispatch(setHasMore(hasMore));
+      if (newAdverts.length > 0) {
+        const uniqueNewAdverts = newAdverts.filter(
+          (newAdvert) =>
+            !currentAdverts.some(
+              (currentAdvert) => currentAdvert.id === newAdvert.id
+            )
+        );
+
+        dispatch(setAdverts([...currentAdverts, ...uniqueNewAdverts]));
+        dispatch(setHasMore(true));
+      } else {
+        dispatch(setHasMore(false));
+      }
     } catch (error) {
       console.error('Error fetching adverts:', error);
     }
   };
-
-// export const fetchAdvertsAsync = () => async (dispatch, getState) => {
-//   const filters = getFilters(getState());
-//   try {
-//     const response = await dispatch(fetchAdverts(filters));
-//     dispatch(setAdverts(response.payload));
-//   } catch (error) {
-//     console.error('Error fetching adverts:', error);
-//   }
-// };
-
-// const getFilters = (state) => {
-//   const page = state.adverts.page;
-//   const makeFilter = state.adverts.makeFilter
-//     ? `make=${state.adverts.makeFilter}`
-//     : '';
-//   const priceFilter = state.adverts.priceFilter
-//     ? `price=${state.adverts.priceFilter}`
-//     : '';
-//   const mileageFilter = state.adverts.mileageFilter
-//     ? `mileage=${state.adverts.mileageFilter}`
-//     : '';
-
-//   const filters = [makeFilter, priceFilter, mileageFilter]
-//     .filter(Boolean)
-//     .join('&');
-
-//   return filters ? `${filters}&page=${page}&limit=12` : `page=${page}&limit=12`;
-// };

@@ -10,13 +10,12 @@ export const Container = styled.div`
   gap: 29px;
 
   padding-top: 40px;
+  padding-bottom: 70px;
 
   width: 1184px;
 `;
 
 export const BtnLoadMore = styled.button`
-  margin-top: 28px;
-  margin-bottom: 100px;
   padding: 12px 0;
 
   width: 80px;
