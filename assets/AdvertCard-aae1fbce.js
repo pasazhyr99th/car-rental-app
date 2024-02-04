@@ -1,4 +1,4 @@
-import{s as e,a as s,r as w,j as o}from"./index-965d89c7.js";const v=n=>n.adverts.list,K=n=>n.adverts.favorites,f="/car-rental-app/assets/sprite-4cf49c6b.svg",C=e.div`
+import{s as e,a as s,r as w,j as o}from"./index-917877b4.js";const v=n=>n.adverts.list,K=n=>n.adverts.favorites,f="/car-rental-app/assets/sprite-4cf49c6b.svg",C=e.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -121,7 +121,7 @@ import{s as e,a as s,r as w,j as o}from"./index-965d89c7.js";const v=n=>n.advert
   letter-spacing: -0.02em;
   color: ${s.blueMainColor};
 `,L=e.button`
-  margin-top: 16px;
+  margin-top: 24px;
   padding: 12px 50px;
 
   font-weight: 600;
