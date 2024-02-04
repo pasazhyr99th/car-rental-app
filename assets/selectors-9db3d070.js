@@ -1,4 +1,4 @@
-import{s as n,a as s,r as w,j as o}from"./index-64a1a491.js";const f="/car-rental-app/assets/sprite-4cf49c6b.svg",C=n.div`
+import{s as n,a as s,r as w,j as o}from"./index-91e79ad5.js";const f="/car-rental-app/assets/sprite-4cf49c6b.svg",C=n.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -176,7 +176,7 @@ import{s as n,a as s,r as w,j as o}from"./index-64a1a491.js";const f="/car-renta
   height: 18px;
   stroke: ${s.blueMainColor};
   fill: ${s.blueMainColor};
-`,H=n.img`
+`,P=n.img`
   width: 100%;
   height: 268px;
   object-fit: cover;
@@ -210,7 +210,7 @@ import{s as n,a as s,r as w,j as o}from"./index-64a1a491.js";const f="/car-renta
     margin-right: 6px;
     padding-right: 6px;
   }
-`,P=n.button`
+`,R=n.button`
   margin-top: 28px;
   padding: 12px 50px;
 
@@ -235,4 +235,4 @@ import{s as n,a as s,r as w,j as o}from"./index-64a1a491.js";const f="/car-renta
   &:hover {
     background-color: ${s.blueHoverColor};
   }
-`,G=({advert:e,onToggleFavorite:c})=>{const[i,a]=w.useState(!1),h=()=>{c(e.id)},t=()=>{a(!0)},x=()=>{a(!1)};return o.jsxs(D,{children:[o.jsx(S,{onClick:h,children:e.isFavorite?o.jsx(v,{children:o.jsx("use",{href:`${f}#icon-heart`})}):o.jsx(A,{children:o.jsx("use",{href:`${f}#icon-heart`})})}),o.jsx(H,{src:e.img,alt:e.model}),o.jsxs(E,{children:[o.jsxs(b,{children:[e.make," ",e.model.length<=8?o.jsx("span",{style:{color:"#3470FF"},children:e.model}):"",", ",e.year]}),o.jsx(b,{children:e.rentalPrice})]}),o.jsxs(m,{children:[o.jsx(l,{children:e.address.split(",")[1]}),o.jsx(l,{children:e.address.split(",")[2]}),o.jsx(l,{children:e.rentalCompany})]}),o.jsxs(m,{children:[o.jsx(l,{children:e.type}),o.jsx(l,{children:e.model}),o.jsx(l,{children:e.mileage}),o.jsx(l,{children:e.accessories[0]})]}),o.jsx(P,{onClick:t,children:"Learn more"}),i&&o.jsx(T,{isOpen:i,onClose:x,advert:e})]})},K=e=>e.adverts.list,N=e=>e.adverts.favorites,O=e=>e.adverts.makeFilter,U=e=>e.adverts.page,Y=e=>e.adverts.setHasMore;export{G as A,K as a,O as b,U as c,Y as d,N as s};
+`,H=({advert:e,onToggleFavorite:c})=>{const[i,a]=w.useState(!1),h=()=>{c(e.id)},t=()=>{a(!0)},x=()=>{a(!1)};return o.jsxs(D,{children:[o.jsx(S,{onClick:h,children:e.isFavorite?o.jsx(v,{children:o.jsx("use",{href:`${f}#icon-heart`})}):o.jsx(A,{children:o.jsx("use",{href:`${f}#icon-heart`})})}),o.jsx(P,{src:e.img,alt:e.model}),o.jsxs(E,{children:[o.jsxs(b,{children:[e.make," ",e.model.length<=8?o.jsx("span",{style:{color:"#3470FF"},children:e.model}):"",", ",e.year]}),o.jsx(b,{children:e.rentalPrice})]}),o.jsxs(m,{children:[o.jsx(l,{children:e.address.split(",")[1]}),o.jsx(l,{children:e.address.split(",")[2]}),o.jsx(l,{children:e.rentalCompany})]}),o.jsxs(m,{children:[o.jsx(l,{children:e.type}),o.jsx(l,{children:e.model}),o.jsx(l,{children:e.mileage}),o.jsx(l,{children:e.accessories[0]})]}),o.jsx(R,{onClick:t,children:"Learn more"}),i&&o.jsx(T,{isOpen:i,onClose:x,advert:e})]})},K=e=>e.adverts.list,N=e=>e.adverts.favorites,O=e=>e.adverts.makeFilter,U=e=>e.adverts.page,Y=e=>e.adverts.hasMore;export{H as A,K as a,O as b,U as c,Y as d,N as s};
