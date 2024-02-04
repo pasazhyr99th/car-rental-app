@@ -74,10 +74,7 @@ const AdvertCard = ({ advert, onToggleFavorite }) => {
       <BtnLearnMore onClick={openModal}>Learn more</BtnLearnMore>
 
       {showModal && (
-        <Modal isOpen={showModal} onClose={closeModal} advert={advert}>
-          {/* <h2>Мій Заголовок</h2>
-          <p>Зміст модального вікна...</p> */}
-        </Modal>
+        <Modal isOpen={showModal} onClose={closeModal} advert={advert} />
       )}
     </ContainerCard>
   );

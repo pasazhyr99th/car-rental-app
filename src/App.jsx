@@ -26,12 +26,13 @@ const App = () => {
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<Home />} />
-          <Route path="catalog" element={<Catalog />}></Route>
-          <Route path="favorite" element={<Favorite />}></Route>
+          <Route path="catalog" element={<Catalog />} />
+          <Route path="favorite" element={<Favorite />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Route>
       </Routes>
     </ContainerApp>
   );
 };
+
 export default App;
