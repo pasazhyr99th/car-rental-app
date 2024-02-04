@@ -7,6 +7,8 @@ import AdvertCard from '../../components/AdvertCard/AdvertCard';
 import { useEffect } from 'react';
 import { fetchAdvertsAsync } from '../../redux/operations';
 
+import { BtnLoadMore } from './CatalogPage.styled';
+
 const CatalogPage = () => {
   const dispatch = useDispatch();
   const adverts = useSelector(selectAdverts);
@@ -36,7 +38,7 @@ const CatalogPage = () => {
           onToggleFavorite={handleToggleFavorite}
         />
       ))}
-      <button onClick={handleLoadMore}>Load more</button>
+      <BtnLoadMore onClick={handleLoadMore}>Load more</BtnLoadMore>
     </Container>
   );
 };

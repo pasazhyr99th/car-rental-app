@@ -5,6 +5,7 @@ export const ContainerCard = styled.div`
   position: relative;
 
   width: 274px;
+  height: 426px;
   box-sizing: border-box;
 `;
 
@@ -12,6 +13,7 @@ export const ContainerMainInfo = styled.div`
   display: flex;
   justify-content: space-between;
   margin-top: 14px;
+  overflow: hidden;
 `;
 
 export const BtnFavorite = styled.button`
@@ -22,6 +24,7 @@ export const BtnFavorite = styled.button`
   padding: 0;
 
   border: none;
+  outline: none;
 
   background-color: transparent;
 `;
@@ -62,11 +65,13 @@ export const DescriptionList = styled.ul`
   margin-top: 8px;
 
   width: 100%;
-  max-height: 40px;
+  height: 16px;
+
+  overflow: hidden;
 `;
 
 export const DescriptionItem = styled.li`
-  color: rgba(18, 20, 23, 0.5);
+  color: ${styleGuide.greyTagColor};
   font-family: 'Manrope';
   font-size: 12px;
   font-style: normal;
@@ -93,6 +98,7 @@ export const BtnLearnMore = styled.button`
 
   border: 1px solid ${styleGuide.blueMainColor};
   border-radius: 12px;
+  outline: none;
 
   background-color: ${styleGuide.blueMainColor};
 

@@ -4,7 +4,12 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
+  flex-wrap: wrap;
+  gap: 29px;
+
+  padding-top: 40px;
+
+  width: 1184px;
 `;
 
 export const Title = styled.h1`
@@ -17,9 +22,4 @@ export const Title = styled.h1`
     0 0 20px #f23224,
     0 0 40px #f23224,
     0 0 80px #f23224;
-`;
-export const StyledImage = styled.img`
-  width: 40px;
-  height: 40px;
-  object-fit: cover;
 `;

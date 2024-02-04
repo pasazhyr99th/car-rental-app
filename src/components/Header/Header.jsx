@@ -1,5 +1,4 @@
 import { HeaderContainer, Navigation, StyledLink } from './Header.styled';
-// import sprite from 'assets/sprite.svg';
 
 const Header = () => {
   return (
@@ -14,7 +13,3 @@ const Header = () => {
 };
 
 export default Header;
-
-/* <IconWrapper>
-            <use href={`${sprite}#icon-logo`} />
-          </IconWrapper> */

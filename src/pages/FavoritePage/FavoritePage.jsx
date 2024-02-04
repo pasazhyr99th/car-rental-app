@@ -8,9 +8,13 @@ const FavoritePage = () => {
 
   return (
     <Container>
-      {favorites.map((advert) => (
-        <AdvertCard key={advert.id} advert={advert} />
-      ))}
+      {favorites.length ? (
+        favorites.map((advert) => (
+          <AdvertCard key={advert.id} advert={advert} />
+        ))
+      ) : (
+        <p style={{ marginTop: '100px' }}>Oops, your favourite list is empty</p>
+      )}
     </Container>
   );
 };

@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import sprite from '../../assets/sprite.svg';
 
+import Modal from '../Modal/Modal';
+
 import {
   ContainerCard,
   ContainerMainInfo,
@@ -21,7 +23,7 @@ const AdvertCard = ({ advert, onToggleFavorite }) => {
     onToggleFavorite(advert.id);
   };
 
-  const handleLearnMore = () => {
+  const openModal = () => {
     setShowModal(true);
   };
 
@@ -46,7 +48,12 @@ const AdvertCard = ({ advert, onToggleFavorite }) => {
       <CarImg src={advert.img} alt={advert.model} />
       <ContainerMainInfo>
         <Title>
-          {advert.make} <span style={{ color: '#3470FF' }}>{advert.model}</span>
+          {advert.make}{' '}
+          {advert.model.length <= 8 ? (
+            <span style={{ color: '#3470FF' }}>{advert.model}</span>
+          ) : (
+            ''
+          )}
           , {advert.year}
         </Title>
         <Title>{advert.rentalPrice}</Title>
@@ -64,13 +71,13 @@ const AdvertCard = ({ advert, onToggleFavorite }) => {
         <DescriptionItem>{advert.accessories[0]}</DescriptionItem>
       </DescriptionList>
 
-      <BtnLearnMore onClick={handleLearnMore}>Learn more</BtnLearnMore>
+      <BtnLearnMore onClick={openModal}>Learn more</BtnLearnMore>
 
       {showModal && (
-        <div>
-          {/* Modal content with detailed information */}
-          <button onClick={closeModal}>Close</button>
-        </div>
+        <Modal isOpen={showModal} onClose={closeModal} advert={advert}>
+          {/* <h2>Мій Заголовок</h2>
+          <p>Зміст модального вікна...</p> */}
+        </Modal>
       )}
     </ContainerCard>
   );
