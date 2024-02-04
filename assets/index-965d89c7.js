@@ -123,7 +123,7 @@ Error generating stack: `+o.message+`
   @media screen and (min-width: 1220px) {
     width: 1220px;
   }
-`,aw=P.lazy(()=>Na(()=>import("./index-4e844c63.js"),[])),cw=P.lazy(()=>Na(()=>import("./index-70d86034.js"),["assets/index-70d86034.js","assets/AdvertCard-a6a550df.js"])),fw=P.lazy(()=>Na(()=>import("./index-1845de36.js"),["assets/index-1845de36.js","assets/AdvertCard-a6a550df.js"])),dw=()=>U.jsx(sw,{children:U.jsx(Hy,{children:U.jsxs(Nn,{path:"/",element:U.jsx(h1,{}),children:[U.jsx(Nn,{index:!0,element:U.jsx(aw,{})}),U.jsx(Nn,{path:"catalog",element:U.jsx(cw,{})}),U.jsx(Nn,{path:"favorite",element:U.jsx(fw,{})}),U.jsx(Nn,{path:"*",element:U.jsx(By,{to:"/"})})]})})});var om={exports:{}},lm={};/**
+`,aw=P.lazy(()=>Na(()=>import("./index-aafd16ef.js"),[])),cw=P.lazy(()=>Na(()=>import("./index-eee1a8e0.js"),["assets/index-eee1a8e0.js","assets/AdvertCard-24b7cc85.js"])),fw=P.lazy(()=>Na(()=>import("./index-be5af548.js"),["assets/index-be5af548.js","assets/AdvertCard-24b7cc85.js"])),dw=()=>U.jsx(sw,{children:U.jsx(Hy,{children:U.jsxs(Nn,{path:"/",element:U.jsx(h1,{}),children:[U.jsx(Nn,{index:!0,element:U.jsx(aw,{})}),U.jsx(Nn,{path:"catalog",element:U.jsx(cw,{})}),U.jsx(Nn,{path:"favorite",element:U.jsx(fw,{})}),U.jsx(Nn,{path:"*",element:U.jsx(By,{to:"/"})})]})})});var om={exports:{}},lm={};/**
  * @license React
  * use-sync-external-store-with-selector.production.min.js
  *
