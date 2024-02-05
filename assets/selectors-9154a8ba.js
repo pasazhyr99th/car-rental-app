@@ -1,4 +1,4 @@
-import{s as n,a as s,r as w,j as o}from"./index-91e79ad5.js";const f="/car-rental-app/assets/sprite-4cf49c6b.svg",C=n.div`
+import{s as n,a as s,r as w,j as o}from"./index-d0117381.js";const f="/car-rental-app/assets/sprite-4cf49c6b.svg",C=n.div`
   position: fixed;
   top: 0;
   left: 0;
@@ -56,7 +56,7 @@ import{s as n,a as s,r as w,j as o}from"./index-91e79ad5.js";const f="/car-renta
   font-weight: 500;
   font-size: 18px;
   line-height: 1.33;
-`,j=n.div`
+`,u=n.div`
   display: flex;
   flex-direction: column;
   gap: 4px;
@@ -87,7 +87,7 @@ import{s as n,a as s,r as w,j as o}from"./index-91e79ad5.js";const f="/car-renta
     margin-right: 6px;
     padding-right: 6px;
   }
-`,u=n.p`
+`,j=n.p`
   margin-top: 24px;
   margin-bottom: 8px;
 
@@ -142,7 +142,7 @@ import{s as n,a as s,r as w,j as o}from"./index-91e79ad5.js";const f="/car-renta
   &:hover {
     background-color: ${s.blueHoverColor};
   }
-`,B="+380730000000",T=({isOpen:e,onClose:c,advert:i})=>{const a=()=>{c()};w.useEffect(()=>{const t=x=>{x.key==="Escape"&&a()};return window.addEventListener("keydown",t),()=>{window.removeEventListener("keydown",t)}},[a]);const h=()=>{window.location.href=`tel:${B}`};return o.jsxs("div",{children:[o.jsx(C,{onClick:c,"data-isopen":e}),o.jsxs(y,{"data-isopen":e,children:[o.jsx(k,{onClick:c,children:o.jsx($,{children:o.jsx("use",{href:`${f}#icon-close`})})}),o.jsx(M,{src:i.img,alt:i.model}),o.jsxs(z,{children:[i.make," ",o.jsx("span",{style:{color:"#3470FF"},children:i.model}),", ",i.year]}),o.jsxs(j,{children:[o.jsxs(p,{children:[o.jsx(r,{children:i.address.split(",")[1]}),o.jsx(r,{children:i.address.split(",")[2]}),o.jsxs(r,{children:["Id: ",i.id]}),o.jsxs(r,{children:["Year: ",i.year]}),o.jsxs(r,{children:["Type: ",i.type]})]}),o.jsxs(p,{children:[o.jsxs(r,{children:["Fuel Consumption: ",i.fuelConsumption]}),o.jsxs(r,{children:["Engine Size: ",i.engineSize]})]})]}),o.jsx(F,{children:i.description}),o.jsx(u,{children:"Accessories and functionalities:"}),o.jsxs(j,{children:[o.jsx(p,{children:i.accessories.map(t=>o.jsx(r,{children:t},t))}),o.jsx(p,{children:i.functionalities.map(t=>o.jsx(r,{children:t},t))})]}),o.jsx(u,{children:"Rental Conditions:"}),o.jsxs(I,{children:[o.jsxs(d,{children:["Minimum age:"," ",o.jsx(g,{children:i.rentalConditions.slice(13,16)})]}),o.jsx(d,{children:i.rentalConditions.split(`
+`,T="+380730000000",B=({isOpen:e,onClose:c,advert:i})=>{const a=()=>{c()};w.useEffect(()=>{const t=x=>{x.key==="Escape"&&a()};return window.addEventListener("keydown",t),()=>{window.removeEventListener("keydown",t)}},[a]);const h=()=>{window.location.href=`tel:${T}`};return o.jsxs("div",{children:[o.jsx(C,{onClick:c,"data-isopen":e}),o.jsxs(y,{"data-isopen":e,children:[o.jsx(k,{onClick:c,children:o.jsx($,{children:o.jsx("use",{href:`${f}#icon-close`})})}),o.jsx(M,{src:i.img,alt:i.model}),o.jsxs(z,{children:[i.make," ",o.jsx("span",{style:{color:"#3470FF"},children:i.model}),", ",i.year]}),o.jsxs(u,{children:[o.jsxs(p,{children:[o.jsx(r,{children:i.address.split(",")[1]}),o.jsx(r,{children:i.address.split(",")[2]}),o.jsxs(r,{children:["Id: ",i.id]}),o.jsxs(r,{children:["Year: ",i.year]}),o.jsxs(r,{children:["Type: ",i.type]})]}),o.jsxs(p,{children:[o.jsxs(r,{children:["Fuel Consumption: ",i.fuelConsumption]}),o.jsxs(r,{children:["Engine Size: ",i.engineSize]})]})]}),o.jsx(F,{children:i.description}),o.jsx(j,{children:"Accessories and functionalities:"}),o.jsxs(u,{children:[o.jsx(p,{children:i.accessories.map(t=>o.jsx(r,{children:t},t))}),o.jsx(p,{children:i.functionalities.map(t=>o.jsx(r,{children:t},t))})]}),o.jsx(j,{children:"Rental Conditions:"}),o.jsxs(I,{children:[o.jsxs(d,{children:["Minimum age:"," ",o.jsx(g,{children:i.rentalConditions.slice(13,16)})]}),o.jsx(d,{children:i.rentalConditions.split(`
 `)[1]}),o.jsx(d,{children:i.rentalConditions.split(`
 `)[2]}),o.jsxs(d,{children:["Mileage:"," ",o.jsx(g,{children:i.mileage.toLocaleString("en-US")})]}),o.jsxs(d,{children:["Price: ",o.jsx(g,{children:i.rentalPrice})]})]}),o.jsx(L,{onClick:h,children:"Rental car"})]})]})},D=n.div`
   position: relative;
@@ -176,11 +176,13 @@ import{s as n,a as s,r as w,j as o}from"./index-91e79ad5.js";const f="/car-renta
   height: 18px;
   stroke: ${s.blueMainColor};
   fill: ${s.blueMainColor};
-`,P=n.img`
+`,G=n.img`
   width: 100%;
   height: 268px;
   object-fit: cover;
   border-radius: 14px;
+
+  background-color: ${s.lightGreyTextColor};
 `,b=n.p`
   font-weight: 500;
   font-size: 16px;
@@ -210,7 +212,7 @@ import{s as n,a as s,r as w,j as o}from"./index-91e79ad5.js";const f="/car-renta
     margin-right: 6px;
     padding-right: 6px;
   }
-`,R=n.button`
+`,P=n.button`
   margin-top: 28px;
   padding: 12px 50px;
 
@@ -235,4 +237,4 @@ import{s as n,a as s,r as w,j as o}from"./index-91e79ad5.js";const f="/car-renta
   &:hover {
     background-color: ${s.blueHoverColor};
   }
-`,H=({advert:e,onToggleFavorite:c})=>{const[i,a]=w.useState(!1),h=()=>{c(e.id)},t=()=>{a(!0)},x=()=>{a(!1)};return o.jsxs(D,{children:[o.jsx(S,{onClick:h,children:e.isFavorite?o.jsx(v,{children:o.jsx("use",{href:`${f}#icon-heart`})}):o.jsx(A,{children:o.jsx("use",{href:`${f}#icon-heart`})})}),o.jsx(P,{src:e.img,alt:e.model}),o.jsxs(E,{children:[o.jsxs(b,{children:[e.make," ",e.model.length<=8?o.jsx("span",{style:{color:"#3470FF"},children:e.model}):"",", ",e.year]}),o.jsx(b,{children:e.rentalPrice})]}),o.jsxs(m,{children:[o.jsx(l,{children:e.address.split(",")[1]}),o.jsx(l,{children:e.address.split(",")[2]}),o.jsx(l,{children:e.rentalCompany})]}),o.jsxs(m,{children:[o.jsx(l,{children:e.type}),o.jsx(l,{children:e.model}),o.jsx(l,{children:e.mileage}),o.jsx(l,{children:e.accessories[0]})]}),o.jsx(R,{onClick:t,children:"Learn more"}),i&&o.jsx(T,{isOpen:i,onClose:x,advert:e})]})},K=e=>e.adverts.list,N=e=>e.adverts.favorites,O=e=>e.adverts.makeFilter,U=e=>e.adverts.page,Y=e=>e.adverts.hasMore;export{H as A,K as a,O as b,U as c,Y as d,N as s};
+`,H=({advert:e,onToggleFavorite:c})=>{const[i,a]=w.useState(!1),h=()=>{c(e.id)},t=()=>{a(!0)},x=()=>{a(!1)};return o.jsxs(D,{children:[o.jsx(S,{onClick:h,children:e.isFavorite?o.jsx(v,{children:o.jsx("use",{href:`${f}#icon-heart`})}):o.jsx(A,{children:o.jsx("use",{href:`${f}#icon-heart`})})}),o.jsx(G,{src:e.img,alt:e.model}),o.jsxs(E,{children:[o.jsxs(b,{children:[e.make," ",e.model.length<=8?o.jsx("span",{style:{color:"#3470FF"},children:e.model}):"",", ",e.year]}),o.jsx(b,{children:e.rentalPrice})]}),o.jsxs(m,{children:[o.jsx(l,{children:e.address.split(",")[1]}),o.jsx(l,{children:e.address.split(",")[2]}),o.jsx(l,{children:e.rentalCompany})]}),o.jsxs(m,{children:[o.jsx(l,{children:e.type}),o.jsx(l,{children:e.model}),o.jsx(l,{children:e.mileage}),o.jsx(l,{children:e.accessories[0]})]}),o.jsx(P,{onClick:t,children:"Learn more"}),i&&o.jsx(B,{isOpen:i,onClose:x,advert:e})]})},K=e=>e.adverts.list,N=e=>e.adverts.favorites,O=e=>e.adverts.makeFilter,U=e=>e.adverts.page,Y=e=>e.adverts.hasMore;export{H as A,K as a,O as b,U as c,Y as d,N as s};
