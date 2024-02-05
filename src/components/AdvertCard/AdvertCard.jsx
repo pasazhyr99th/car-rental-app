@@ -46,6 +46,7 @@ const AdvertCard = ({ advert, onToggleFavorite }) => {
       </BtnFavorite>
 
       <CarImg src={advert.img} alt={advert.model} />
+
       <ContainerMainInfo>
         <Title>
           {advert.make}{' '}

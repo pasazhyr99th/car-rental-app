@@ -48,6 +48,8 @@ export const CarImg = styled.img`
   height: 268px;
   object-fit: cover;
   border-radius: 14px;
+
+  background-color: ${styleGuide.lightGreyTextColor};
 `;
 
 export const Title = styled.p`
